@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box_shadow_practice.html</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 100px;
+/*            */
+            transition: 1s;
+        }
+        div:hover {
+            background-color: deepskyblue;
+            box-shadow: 0px 0px 22px 16px grey;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id='btn'></div>
+    
+    <script>
+        let blue=true;
+        btn.addEventListener('click', function() {
+            if (blue ===true) {
+            btn.style.backgroundColor = 'red';
+            blue = false;
+            } else {
+            btn.style.backgroundColor = 'blue'
+            blue = true;
+            }
+        });
+    </script>
+    
+</body>
+</html>
