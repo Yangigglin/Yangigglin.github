@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>centering</title>
     <style>
         div {
             border: solid;
-            width: 300px;
+            width: 200px;
             height: 100px;
-/*            */
+            /* auto config the margin-left and margin-right    */
+            /*      let computer decide what are the margin-left/margin-right*/
             margin: auto;
         }
+
         img {
             width: 300px;
         }
-        main {
-            text-align: center;    
+
+        body {
+            text-align: center;
         }
+
     </style>
 </head>
+
 <body>
-    <div>block</div>
-    <main>
-        <button>inline-block</button>
-        <br>
-        <img src="https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-    </main>
+    <h1>How to center block, inline-block, and inline elements</h1>
+    <div>Block</div>
+
+    <button>inline-block</button>
+    <br>
+    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
     <ul>
-        <li>for block: margin:auto set for itself</li>
-        <li>for inline/inline-block: text align: center set for its container</li>
+        <li>center block: set margin:auto for itself</li>
+        <li>center inline/inline-block: use text-align for its container</li>
     </ul>
 </body>
+
 </html>
