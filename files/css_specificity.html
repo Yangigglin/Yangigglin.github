@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS specificity</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+
+        /* id selector */
+        #firstid {
+            color: red;
+        }
+
+        /* class selector */
+        /* class selector is more specific */
+        .first {
+            color: green;
+        }
+
+        /* longer path > short path */
+        ul li {
+            color: aqua !important;
+        }
+
+        ul li {
+            color: orange !important;
+        }
+
+        tag selector li {
+            color: blue !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>!important>inline css>id>class>tag</h1>
+    <ul>
+        <li style='color:purple' id='firstid' class='first'>Hiking</li>
+        <li>Talking</li>
+        <li>Playing</li>
+        <li>Pickelball/Tennes</li>
+    </ul>
+</body></html>
