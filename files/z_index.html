@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>z_index.html</title>
     <style>
         #container {
             border: solid;
@@ -20,8 +19,8 @@
 
         #one {
             background-color: pink;
-            position: relative;
             z-index: 2;
+            position: relative;
         }
 
         #two {
@@ -31,15 +30,14 @@
             left: 100px;
             z-index: 1;
         }
-
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <div id="one" class="item">one</div>
-        <div id="two" class="item">two</div>
-    </div>
-</body>
 
-</html>
+    <!--  #container>#one+#two-->
+    <div id="container">
+        <div id="one" class='item'>one</div>
+        <div id="two" class='item'>two</div>
+    </div>
+</body></html>
