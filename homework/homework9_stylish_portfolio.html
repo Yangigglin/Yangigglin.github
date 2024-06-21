@@ -198,6 +198,143 @@
             padding: 12px 17px;
         }
 
+        .offcanvas-title {
+            font-size: 18px;
+            color: white;
+            font-weight: 400;
+            padding: 8px;
+            margin-left: -5px;
+            background-color: #1f7996;
+        }
+
+        .offcanvas-header {
+            background-color: #1f7996;
+            margin: 0px;
+        }
+
+        .offcanvas-body a {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            font-family: 'Source Sans 3', sans-serif;
+            text-decoration: none;
+            color: white;
+            padding: 15px 18px;
+            ;
+            margin: 0px;
+        }
+
+        .offcanvas-body {
+            padding: 0px;
+        }
+
+        #portfolio {
+            text-align: center;
+            padding: 120px 0px;
+        }
+
+        #portfolio h3 {
+            color: #ecb807;
+            font-size: 16px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 700;
+            margin: 0px;
+        }
+
+        #portfolio h1 {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 57px;
+            font-weight: 700;
+            font-size: 48px;
+        }
+
+        #portfolio .img {
+            display: inline-block;
+            text-align: left;
+            width: 612px;
+            height: 408px;
+            padding: 0px;
+        }
+
+        #portfolio .img h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 300px;
+            margin-left: 60px;
+        }
+
+        #portfolio .img p {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 19px;
+            color: white;
+            font-weight: 300;
+            margin-left: 60px;
+        }
+
+        #first {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
+        }
+
+        #second {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
+        }
+
+        #third {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
+        }
+
+        #fourth {
+            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
+            padding: 0px;
+        }
+
+        #buttons {
+            text-align: center;
+            background-color: #1D809F;
+            padding: 100px 0px;
+        }
+
+        #buttons h2 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0px;
+            margin-bottom: 4px;
+            color: white;
+        }
+
+        #buttons button {
+            background-color: #212529;
+            color: white;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 6px;
+            margin: 20px 12px;
+        }
+
+        #buttons button:hover {
+            background-color: #424649;
+        }
+
+        #buttons button.white {
+            background-color: white;
+            color: #212529;
+        }
+
+        #buttons button.white:hover {
+            background-color: #c6c7c8;
+        }
+
+        #map iframe {
+            width: 100%;
+            height: 475px;
+        }
     </style>
 </head>
 
@@ -208,11 +345,14 @@
 
     <div class="offcanvas offcanvas-end" data-bs-backdrop="false" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Start Bootstrap</h5>
         </div>
         <div class="offcanvas-body">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
@@ -228,7 +368,6 @@
                 this.classList.add('fa-bars');
             }
         });
-
     </script>
     <header id="home">
         <h1>Stylish Portfolio</h1>
@@ -277,6 +416,39 @@
         </a>
 
     </section>
-</body>
 
-</html>
+    <section id="portfolio">
+        <h3>PORTFOLIO</h3>
+        <h1>Recent Projects</h1>
+        <div class="img" id="first">
+            <h4>STATIONARY</h4>
+            <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+        </div>
+        <div class="img" id="second">
+            <h4>ICE CREAM</h4>
+            <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+        </div>
+        <div class="img" id="third">
+            <h4>STRAWBERRIES</h4>
+            <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+        </div>
+        <div class="img" id="fourth">
+            <h4>WORKSPACE</h4>
+            <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+        </div>
+
+    </section>
+
+    <section id="buttons">
+        <h2>The buttons below are impossible to resist...</h2>
+        <button class="white">Click Me!</button>
+        <button>Look At Me!</button>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7500.587033450489!2d-122.42471373097234!3d37.77577998786565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sX%20Corp.%20HQ!5e0!3m2!1sen!2sca!4v1718935000973!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="contact">
+
+    </section>
+</body></html>

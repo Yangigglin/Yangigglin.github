@@ -192,7 +192,7 @@
 
         #contact input {
             margin: 20px 0;
-            width: 750px;
+            width: 95%;
             height: 50px;
             font-size: 25px;
             border: none;
@@ -204,7 +204,7 @@
         }
 
         #contact textarea {
-            width: 750px;
+            width: 95%;
             margin: 20px 0;
             font-size: 25px;
             border: none;
@@ -215,13 +215,14 @@
         }
 
         #contact button {
+            display: block;
             padding: 20px 30px;
             font-size: 20px;
             background-color: #1abc9c;
             border: none;
             color: white;
             border-radius: 10px;
-            margin-right: 650px;
+            margin-left: 18px;
         }
 
         footer {
@@ -269,6 +270,11 @@
             margin: 0px 4px 20px 4px;
         }
 
+        footer i:hover {
+            color: black;
+            background-color: white;
+        }
+
         footer p {
             display: inline-block;
             font-family: 'Lato', sans-serif;
@@ -297,8 +303,12 @@
             color: white;
             margin: 0px;
         }
-        }
 
+        @media all and (max-width: 991px) {
+            nav li {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -398,6 +408,4 @@
 </footer>
 <section id="copyright">
     <p>Copyright © Your Website 2023</p>
-</section>
-
-</html>
+</section></html>
