@@ -247,14 +247,18 @@
             line-height: 57px;
             font-weight: 700;
             font-size: 48px;
+            margin-bottom: 50px;
         }
 
         #portfolio .img {
+            position: relative;
             display: inline-block;
             text-align: left;
             width: 612px;
             height: 408px;
             padding: 0px;
+            margin: -3px;
+
         }
 
         #portfolio .img h4 {
@@ -262,8 +266,8 @@
             color: white;
             font-size: 13px;
             font-weight: 700;
-            margin-top: 300px;
-            margin-left: 60px;
+            margin: 0px;
+            margin-bottom: 8px;
         }
 
         #portfolio .img p {
@@ -271,24 +275,30 @@
             font-size: 19px;
             color: white;
             font-weight: 300;
-            margin-left: 60px;
+            margin: 0px;
+            width: 475px;
+        }
+
+        #portfolio .img .text {
+            position: absolute;
+            bottom: 80px;
+            left: 75px;
         }
 
         #first {
-            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
+            background: linear-gradient(rgba(33, 37, 41, 0.2), rgba(33, 37, 41, 0.2)), url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
         }
 
         #second {
-            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
+            background: linear-gradient(rgba(33, 37, 41, 0.2), rgba(33, 37, 41, 0.2)), url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
         }
 
         #third {
-            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
+            background: linear-gradient(rgba(33, 37, 41, 0.2), rgba(33, 37, 41, 0.2)), url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
         }
 
         #fourth {
-            background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
-            padding: 0px;
+            background: linear-gradient(rgba(33, 37, 41, 0.2), rgba(33, 37, 41, 0.2)), url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
         }
 
         #buttons {
@@ -421,20 +431,28 @@
         <h3>PORTFOLIO</h3>
         <h1>Recent Projects</h1>
         <div class="img" id="first">
-            <h4>STATIONARY</h4>
-            <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+            <div class="text">
+                <h4>STATIONARY</h4>
+                <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+            </div>
         </div>
         <div class="img" id="second">
-            <h4>ICE CREAM</h4>
-            <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            <div class="text">
+                <h4>ICE CREAM</h4>
+                <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </div>
         </div>
         <div class="img" id="third">
-            <h4>STRAWBERRIES</h4>
-            <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+            <div class="text">
+                <h4>STRAWBERRIES</h4>
+                <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+            </div>
         </div>
         <div class="img" id="fourth">
-            <h4>WORKSPACE</h4>
-            <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+            <div class="text">
+                <h4>WORKSPACE</h4>
+                <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+            </div>
         </div>
 
     </section>
